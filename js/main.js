@@ -5,21 +5,26 @@ $('.carousel').carousel({
   });
 
 /*Testimonial*/
-$(document).ready(function(){
-    $(".testimonial .indicators li").click(function(){
-      var i = $(this).index();
-      var targetElement = $(".testimonial .tabs li");
-      targetElement.eq(i).addClass('active');
-      targetElement.not(targetElement[i]).removeClass('active');
-              });
-              $(".testimonial .tabs li").click(function(){
-                  var targetElement = $(".testimonial .tabs li");
-                  targetElement.addClass('active');
-                  targetElement.not($(this)).removeClass('active');
-              });
-          });
-  $(document).ready(function(){
-      $(".slider .swiper-pagination span").each(function(i){
-          $(this).text(i+1).prepend("0");
-      });
-  });
+$(document).ready(function () {
+    var silder = $(".owl-carousel");
+    silder.owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: false,
+    items: 1,
+    stagePadding: 20,
+    center: true,
+    nav: false,
+    margin: 50,
+    dots: true,
+    loop: true,
+    responsive: {
+    0: { items: 1 },
+    480: { items: 2 },
+    575: { items: 2 },
+    768: { items: 2 },
+    991: { items: 3 },
+    1200: { items: 4 }
+    }
+    });
+    });
