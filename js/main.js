@@ -79,3 +79,9 @@ wow = new WOW(
       }
     )
    wow.init();
+
+   /*About us*/
+   $(function(){
+    $('a[title]').tooltip();
+    });
+   /* end about us*/
