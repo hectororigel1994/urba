@@ -22,7 +22,8 @@
 	left: 0;
 	right: 0;
 	z-index: 10; /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
-  }
+	margin-bottom: 0px !important;
+}
   
   .navbar-default .navbar-brand {
 	font-family: Verdana;
