@@ -60,7 +60,7 @@
       </div>
     </nav>
   
-    <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000">
+    <div id="myCarousel" class="carousel carousel-fade slide wow fadeInLeft" data-ride="carousel" data-interval="3000">
       <div class="carousel-inner" role="listbox">
         <div class="item active background a"></div>
         <div class="item background b"></div>
@@ -85,7 +85,7 @@
     <div class="container py-4">
       <h1 class="h1 text-center" id="pageHeaderTitle">My Cards Dark</h1>
   
-      <article class="postcard dark blue">
+      <article class="postcard dark blue wow fadeInRight">
         <a class="postcard__img_link" href="#">
           <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
         </a>
@@ -107,7 +107,7 @@
           </ul>
         </div>
       </article>
-      <article class="postcard dark red">
+      <article class="postcard dark red wow fadeInLeft">
         <a class="postcard__img_link" href="#">
           <img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />	
         </a>
@@ -129,7 +129,7 @@
           </ul>
         </div>
       </article>
-      <article class="postcard dark green">
+      <article class="postcard dark green fadeInRight">
         <a class="postcard__img_link" href="#">
           <img class="postcard__img" src="https://picsum.photos/500/501" alt="Image Title" />
         </a>
@@ -151,7 +151,7 @@
           </ul>
         </div>
       </article>
-      <article class="postcard dark yellow">
+      <article class="postcard dark yellow fadeInLeft">
         <a class="postcard__img_link" href="#">
           <img class="postcard__img" src="https://picsum.photos/501/501" alt="Image Title" />
         </a>
@@ -468,33 +468,19 @@
 <!-- end footer -->
 
 <script>
-$(document).ready(function () {
-    var silder = $(".owl-carousel");
-    silder.owlCarousel({
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: false,
-    items: 1,
-    stagePadding: 20,
-    center: true,
-    nav: false,
-    margin: 50,
-    dots: true,
-    loop: true,
-    responsive: {
-    0: { items: 1 },
-    480: { items: 2 },
-    575: { items: 2 },
-    768: { items: 2 },
-    991: { items: 3 },
-    1200: { items: 4 }
-    }
-    });
-    });
+wow = new WOW(
+    {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // change this if you are not using animate.css
+        offset:       0,          // default
+        mobile:       true,       // keep it on mobile
+        live:         true        // track if element updates
+      }
+    )
+   wow.init();
   </script>
 
         <script src="/js/main.js"></script>
-        <!-- <script src="js/popper.min.js"></script> -->
         
 </body>
 </html>
