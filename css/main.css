@@ -596,6 +596,12 @@ a:hover {
 }
 
 /*Footer*/
+
+.final-logo{
+  max-width: 100%;
+  height: auto;
+}
+
 body{margin-top:20px;}
 .deneb_footer .widget_wrapper {
     background-repeat: no-repeat;
